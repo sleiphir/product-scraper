@@ -1,0 +1,23 @@
+{
+  "name": "LDLC",
+  "website": "https://www.ldlc.com",
+  "pollRate": 10000,
+  "needsReload": false,
+  "scrapers": [
+    {
+      "product": {
+        "name": "NVIDIA Geforce RTX 3080 FE",
+        "url": "https://www.ldlc.com/informatique/pieces-informatique/carte-graphique-interne/c4684/+fv121-19183+fv1766-16762.html?sort=1"
+      },
+      "data": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",
+        "selectors": {
+          "waitFor": ".pdt-item",
+          "xpath": "//*/li[@class=\"pdt-item\"]/div/div/div/div[contains(text(), \"719\")]",
+          "xpathIsOutOfStock": false,
+          "xpathProductPageUrl": "//*/div[@class=\"pdt-info\"]/*/*/a"
+        }
+      }
+    }
+  ]
+}

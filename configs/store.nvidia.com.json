@@ -1,0 +1,23 @@
+{
+  "name": "NVIDIA",
+  "website": "https://store.nvidia.com",
+  "pollRate": 10000,
+  "needsReload": true,
+  "scrapers": [
+    {
+      "product": {
+        "name": "NVIDIA Geforce RTX 3080 FE",
+        "url": "https://store.nvidia.com/fr-fr/geforce/store/gpu/?page=1&limit=9&locale=fr-fr&category=GPU&gpu=RTX%203080"
+      },
+      "data": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",
+        "selectors": {
+          "waitFor": ".featured-buy-link",
+          "xpath": "//*[@id=\"mainCont\"]/featured-product/*/*/*/*/*/*/a[contains(@class, \"stock-grey-out\")]",
+          "xpathIsOutOfStock": true,
+          "xpathProductPageUrl": null
+        }
+      }
+    }
+  ]
+}
