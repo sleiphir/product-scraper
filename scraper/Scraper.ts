@@ -1,6 +1,6 @@
 import { Browser, Page } from 'puppeteer';
 import { Webhook } from 'discord-webhook-node';
-import Store from "../Types/Store";
+import Store from "../types/Store";
 
 class Scraper {
   private store: Store;
